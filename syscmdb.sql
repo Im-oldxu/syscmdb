@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.43, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.39, for Linux (x86_64)
 --
 -- Host: localhost    Database: syscmdb
 -- ------------------------------------------------------
--- Server version	5.6.43
+-- Server version	5.7.39
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,6 +14,14 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `syscmdb`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `syscmdb` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `syscmdb`;
 
 --
 -- Table structure for table `auth_group`
@@ -125,7 +133,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$36000$BZJWGDzr96Vl$hJCfgAj9Idy3A8wKm1Tp3hmpYwF6IzVaOdE5/rJ6o8o=','2019-09-26 16:39:17.302120',1,'admin','','','admin@qq.com',1,1,'2019-09-26 16:28:36.455745'),(2,'pbkdf2_sha256$36000$JkWHLzaZ1GmM$no0CEdQLT8xa1L6fAx9YctSHyTonb65LTwnhhtLHD3Y=',NULL,1,'devops','','','devops@qq.com',1,1,'2019-09-26 16:28:56.402909'),(3,'pbkdf2_sha256$36000$8fLG4esuXO7F$8f1s5ADRmwyNQ2qGZXwvwglZoVVOXY3GMUXROPvn+g4=',NULL,0,'qiangzou','','','jing74@gmail.com',0,1,'2019-09-26 16:34:02.550895'),(4,'pbkdf2_sha256$36000$vA5BTkBBpULj$V7D6trCLkXxhH653kyjgcRxwKGwVtygBiRGzwgRolSs=',NULL,0,'chengjie','','','jing25@iq.cn',0,1,'2019-09-26 16:34:02.659609'),(5,'pbkdf2_sha256$36000$4oUMek7KyVDi$f3HCFERrrnFOblCtkZfbZStG+F65nVQRMoq+iiPFYvo=',NULL,0,'vdu','','','xiuyingye@hotmail.com',0,1,'2019-09-26 16:34:02.747874'),(6,'pbkdf2_sha256$36000$ISUlBhR0mwGs$9Jye688k4GBDbw/YrwKCk39RS/HQ09XlCd76OGWg1eE=',NULL,0,'juanpeng','','','yuyong@guiying.cn',0,1,'2019-09-26 16:34:02.829747'),(7,'pbkdf2_sha256$36000$pdrN7jhO66Cz$9YtyKsMv+go1YytSHf6+WnAmexuhImgPdx3yUK1Am5Q=',NULL,0,'fang36','','','taoding@yanliu.cn',0,1,'2019-09-26 16:34:02.925478'),(8,'pbkdf2_sha256$36000$oxg0lzapITTw$B2u2qPq/MHNipoWOup2HcsZ3b3hXFyasVkZo5YjG4Fw=',NULL,0,'junxu','','','qiangli@yahoo.com',0,1,'2019-09-26 16:34:03.022185'),(9,'pbkdf2_sha256$36000$YhvQGVJLJFMW$ED/ZHz4i1yyJHeTNNBF5yHu74xFMw+pleYSDk+9tERw=',NULL,0,'yong79','','','ping70@yahoo.com',0,1,'2019-09-26 16:34:03.111063'),(10,'pbkdf2_sha256$36000$j6tKcPHRfE74$x3kWxROiYZ1Sq/c5wtdzoQCBiivbiSID614ZLD/RGsU=',NULL,0,'qiaoxia','','','zhujie@47.cn',0,1,'2019-09-26 16:34:03.192846'),(11,'pbkdf2_sha256$36000$MpnmA2KkvAWg$lOEJaHAlh5p64PJVqkNiDT37EsJfgep/hAc0xOxpwEA=',NULL,0,'minxia','','','xiuyinglai@sun.cn',0,1,'2019-09-26 16:34:03.280572'),(12,'pbkdf2_sha256$36000$qH0rbsopgy3W$wa6VfxbEldNZQoVctFggt9XdDsdcWLhNV/36Uo/kqp8=',NULL,0,'uxia','','','luojie@73.cn',0,1,'2019-09-26 16:34:03.364386'),(13,'pbkdf2_sha256$36000$STVGRhzmkC21$jtFXZW+whrB0uwjM5LczCi6WEwxsh/h+kwFRPeF39+g=',NULL,0,'mingxia','','','zhongxiulan@tao.cn',0,1,'2019-09-26 16:34:03.446131'),(14,'pbkdf2_sha256$36000$v5YKlraFF7Ts$hA9QI6G+qOjyjL8hGfs2CabVgU9zLeuxhl4FCFdjqdE=',NULL,0,'jkong','','','weiguiying@gmail.com',0,1,'2019-09-26 16:34:03.527943'),(15,'pbkdf2_sha256$36000$aDB0g9rbXWCe$7OC5DALkutlhALbH+WtUQip6wzwwXpqF8ID6hy+PRsg=',NULL,0,'xiangjuan','','','mjiang@li.net',0,1,'2019-09-26 16:34:03.607725'),(16,'pbkdf2_sha256$36000$cwQl3ilurUpI$X6A1g4FkDA9U1X00N7F1s2xPr8mJ/5HtNxdZwVyu41A=',NULL,0,'yanjing','','','jieluo@yahoo.com',0,1,'2019-09-26 16:34:03.690525'),(17,'pbkdf2_sha256$36000$5hlz24Q7FWf7$OOVJy6uGqH8KfsvEXK16lH4Ms9L2ZcCjWkA9rSumbzk=',NULL,0,'xiulan64','','','jingxia@hotmail.com',0,1,'2019-09-26 16:34:03.778277'),(18,'pbkdf2_sha256$36000$LouQaOzEeNeH$JG++LLTw6yiIC93tKabhWih+2st6DTfXaTs4JCh1WEg=',NULL,0,'xiulan01','','','longping@yanjuan.net',0,1,'2019-09-26 16:34:03.860071'),(19,'pbkdf2_sha256$36000$wR3WSbgglT1K$IALv6sbrrCB2xea5zU7P5WIsR60iHxz5JKHli3dIoSU=',NULL,0,'nyao','','','li23@yahoo.com',0,1,'2019-09-26 16:34:03.939847'),(20,'pbkdf2_sha256$36000$Gj3srJCYVkSA$uJK0sDFK4KNgt7bI0+H71SGvWmF2m6c+FjG0TEw6mLE=',NULL,0,'xiuyingfan','','','yuanchao@38.cn',0,1,'2019-09-26 16:34:04.022588'),(21,'pbkdf2_sha256$36000$mX3x4klVsQD2$GTtAGVo2txwxDYXlq3GLT9EzsdUaStmj0Y3Nn0+PGMw=',NULL,0,'dxiong','','','zliang@leiqin.cn',0,1,'2019-09-26 16:34:04.105939'),(22,'pbkdf2_sha256$36000$6tXblsv7JCVx$5p1lcDeYKblSTHCOsYm2FcTBmNuSE+8oIKiaBzdp7lQ=',NULL,0,'zhujing','','','duwei@xie.cn',0,1,'2019-09-26 16:34:04.207737'),(23,'pbkdf2_sha256$36000$hCUHxOL0S5bD$ztXj8rh9QfCNwG5StWE/ZsO+qraqdyySu2jqctSuDhY=',NULL,0,'vhou','','','chaoqiu@gmail.com',0,1,'2019-09-26 16:34:04.300455'),(24,'pbkdf2_sha256$36000$Paf2KWT1cNGH$eMUuL7Ukks+N1jQsbrdvxd69Dn5HqA+7+otGCXrEySk=',NULL,0,'baixia','','','gangjin@hotmail.com',0,1,'2019-09-26 16:34:04.400233'),(25,'pbkdf2_sha256$36000$GsaIrGipYTYu$ptZGjlRUtFZwDUbuY1KJZrlhnmeSRAu7pSwR9Jl/b0k=',NULL,0,'jiexiang','','','ming32@ip.cn',0,1,'2019-09-26 16:34:04.484516'),(26,'pbkdf2_sha256$36000$nlWPZxNW9vhN$EaeX6WCefCdvf3vXr71edJawOdjpxKgH4Lcr7rK1ccs=',NULL,0,'jingjiang','','','wei39@hotmail.com',0,1,'2019-09-26 16:34:04.566315');
+INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$36000$2zR7NmgozcrP$hkBA/YjAGDf8HgFzJ9jh3Fh8chQWLOh8gQnZ8nibSss=','2022-09-19 12:35:30.259351',1,'admin','','','admin@qq.com',1,1,'2019-09-26 16:28:36.455745');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,7 +300,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('tqntjg0ftcy67nlo20pgb7ji7t0ap6az','NGEwOTc2YTc5MWRiZWNjZjljMmEwMmI0ZTMyY2NiODI4NWUwOWFiYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhYzYxZThmNTViMWYxZDhlODBmOTdjOWRiMDAyYTYyNDk5YjJjYTlmIn0=','2019-10-10 16:39:17.305130');
+INSERT INTO `django_session` VALUES ('icuvxdnaoycfaeu1ph6nwag1r3c77yw1','Y2E5ZWRlMGJhOThjZWE5NGY3Yzc3ZGNkMDRiOTg2ZDVmYmYzZDkyMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxNDkyY2JhYzdkOTU3OGNlOTc4MDMzODg3MjE0ZWFjMzI4ZmZlYjM5In0=','2022-10-03 12:35:30.260878'),('tqntjg0ftcy67nlo20pgb7ji7t0ap6az','NGEwOTc2YTc5MWRiZWNjZjljMmEwMmI0ZTMyY2NiODI4NWUwOWFiYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhYzYxZThmNTViMWYxZDhlODBmOTdjOWRiMDAyYTYyNDk5YjJjYTlmIn0=','2019-10-10 16:39:17.305130');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -347,7 +355,7 @@ CREATE TABLE `resources_disk` (
 
 LOCK TABLES `resources_disk` WRITE;
 /*!40000 ALTER TABLE `resources_disk` DISABLE KEYS */;
-INSERT INTO `resources_disk` VALUES (47,'sda','20G',15),(48,'sda','20G',16);
+INSERT INTO `resources_disk` VALUES (47,'sda','20G',15);
 /*!40000 ALTER TABLE `resources_disk` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -377,7 +385,6 @@ CREATE TABLE `resources_idc` (
 
 LOCK TABLES `resources_idc` WRITE;
 /*!40000 ALTER TABLE `resources_idc` DISABLE KEYS */;
-INSERT INTO `resources_idc` VALUES (1,'黑马程序员云机房','itheima','昌平区TBD','010-10000000','贾思远','jiasiyuan@qq.com','13354280969');
 /*!40000 ALTER TABLE `resources_idc` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -405,7 +412,7 @@ CREATE TABLE `resources_network` (
 
 LOCK TABLES `resources_network` WRITE;
 /*!40000 ALTER TABLE `resources_network` DISABLE KEYS */;
-INSERT INTO `resources_network` VALUES (93,'lo','127.0.0.1',15),(94,'ens33','192.168.17.110',15),(95,'lo','127.0.0.1',16),(96,'ens33','192.168.17.102',16);
+INSERT INTO `resources_network` VALUES (93,'lo','127.0.0.1',15),(94,'ens33','192.168.17.110',15);
 /*!40000 ALTER TABLE `resources_network` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -451,7 +458,7 @@ CREATE TABLE `resources_server` (
 
 LOCK TABLES `resources_server` WRITE;
 /*!40000 ALTER TABLE `resources_server` DISABLE KEYS */;
-INSERT INTO `resources_server` VALUES (15,'server01','Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz',1,'1.78','CentOS Linux 7',64,'83c84d56-3b5a-7055-d70c-8f1ced9ca5a0','VMware-56 4d c8 83 5a 3b 55 70-d7 0c 8f 1c ed 9c a5 a0',1,'2019-09-27 20:34:11.439182','2019-09-27 20:36:36.738702',1,20,1,NULL),(16,'centos8','Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz',1,'1.76','CentOS Linux 8',64,'defd4d56-9a1c-bbd1-6c5b-f016d9d17355','VMware-56 4d fd de 1c 9a d1 bb-6c 5b f0 16 d9 d1 73 55',1,'2019-09-27 20:34:19.699225','2019-09-27 20:36:30.293773',NULL,21,1,NULL);
+INSERT INTO `resources_server` VALUES (15,'server01','Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz',1,'1.78','CentOS Linux 7',64,'83c84d56-3b5a-7055-d70c-8f1ced9ca5a0','VMware-56 4d c8 83 5a 3b 55 70-d7 0c 8f 1c ed 9c a5 a0',1,'2019-09-27 20:34:11.439182','2019-09-27 20:36:36.738702',NULL,20,1,NULL);
 /*!40000 ALTER TABLE `resources_server` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -470,7 +477,7 @@ CREATE TABLE `resources_serverauto` (
   `system_status` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `ip_inner` (`ip_inner`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -479,7 +486,7 @@ CREATE TABLE `resources_serverauto` (
 
 LOCK TABLES `resources_serverauto` WRITE;
 /*!40000 ALTER TABLE `resources_serverauto` DISABLE KEYS */;
-INSERT INTO `resources_serverauto` VALUES (20,'192.168.17.110',22,0,0),(21,'192.168.17.102',22,0,0);
+INSERT INTO `resources_serverauto` VALUES (20,'192.168.17.110',22,0,0),(22,'10.0.0.7',22,0,0);
 /*!40000 ALTER TABLE `resources_serverauto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -536,7 +543,6 @@ CREATE TABLE `users_profile` (
 
 LOCK TABLES `users_profile` WRITE;
 /*!40000 ALTER TABLE `users_profile` DISABLE KEYS */;
-INSERT INTO `users_profile` VALUES (1,'翟杰','13666423367','14581521284','报告次数制作不同或者本站帖子.部门希望还是经验.学生上海本站当然男人准备行业.',3),(2,'孙桂芝','15989818864','18757249541','日本通过全部网上今天质量.都是影响还是最大不过你们.',4),(3,'俞伟','13081604256','15998754500','注册实现发布其他没有数据精华.标准网站分析影响很多.',5),(4,'柏秀云','15956494692','13527512294','地方是否中文中心联系查看投资.使用谢谢比较手机关于联系欢迎.电话品牌电话就是活动电话.',6),(5,'王桂香','15912330407','18608068149','中国这种男人这个.质量可以责任无法只是结果.',7),(6,'白春梅','15205023570','18709465699','历史广告感觉虽然.说明是否商品销售软件.不同本站在线拥有.',8),(7,'刘华','15199376407','13345755154','客户需要学习搜索一切以下.日期这里工具.虽然都是生活社区计划.',9),(8,'孙欣','13311103278','13825312203','经验报告以上网络欢迎.进入政府国际欢迎.',10),(9,'萧畅','18237132479','15585672546','不是都是那么其实今年这个.她的游戏没有没有如此分析.东西准备公司能力显示经营.活动能力密码规定工程说明就是.',11),(10,'全倩','13836262119','18589453526','这个查看然后虽然这里深圳的人.商品经济所以有些.然后能力服务经济责任完成.',12),(11,'张小红','13414005408','15304375677','为什发生安全国内.信息一起谢谢起来问题帖子.因此有关政府很多学校增加.',13),(12,'吕斌','14578317195','18239668005','历史方法进入主题中文.日期专业的人管理.经验虽然环境事情任何我们通过.',14),(13,'黄霞','13639098899','13706990982','教育是否问题北京部分建设发表.研究应用出来喜欢投资其他.影响会员美国主题首页男人.',15),(14,'赖玉英','13802963254','14524246764','开始资源完成一样程序.汽车因此地区同时决定如何.她的工作基本.',16),(15,'张明','15609660224','13287273869','政府说明作者准备根据.',17),(16,'胡淑兰','14580726556','14548829644','谢谢如何精华进行一些支持她的加入.工作人民学生质量.',18),(17,'俞娟','13640213831','13280553261','最大工具学生.信息问题行业的话经济不断.制作投资软件.',19),(18,'赵桂英','18636372933','18105657588','威望现在处理功能当然技术地区.用户得到中心如此社会使用.',20),(19,'贺洋','18572575417','13325951717','表示音乐一样两个更新但是.行业决定不能成功方面工具.',21),(20,'赫辉','14584738570','13528303709','学校控制开发看到.位置正在感觉类型应该更多.社会情况关于威望有关软件.',22),(21,'曾雪梅','18220720480','18276200610','没有欢迎还是电影这里产品.操作这个有关分析现在为什所以.准备方法成为.',23),(22,'欧阳玉英','18697570279','14503783234','他们质量公司一起.图片标题关于支持如果最后经济环境.教育发布重要现在有些注册.',24),(23,'冀东','13961288347','18036147579','新闻所以处理一点功能.积分广告威望还有特别软件.我们城市深圳不能最后朋友一切.',25),(24,'姜红','13249476039','13641348270','人员继续状态.重要语言能够因为信息增加.她的有关电影作者.',26);
 /*!40000 ALTER TABLE `users_profile` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -549,4 +555,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-07 16:53:48
+-- Dump completed on 2022-09-19 14:42:20
